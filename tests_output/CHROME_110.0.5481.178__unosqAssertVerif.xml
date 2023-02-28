@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="2"
+            tests="1">
+
+  <testsuite name="unosqAssertVerif"
+    errors="0" failures="2" hostname="" id="" package="unosqAssertVerif" skipped="0"
+    tests="1" time="13.55" timestamp="">
+  
+    <testcase name="Demo test unosquare" classname="unosqAssertVerif" time="13.55" assertions="3">
+
+      <failure message="Testing if element &lt;xxxx&gt; is visible in 5000ms - expected &#34;is visible&#34; but got: &#34;element could not be located&#34; (5233ms)">    at Demo test unosquare (C:\Users\mariana.vives\source\repos\NightWatchJs\Tests\unosqAssertVerif.js:7:15)</failure>
+
+      <failure message="Testing if element &lt;.non_existing&gt; is visible in 5000ms - expected &#34;is visible&#34; but got: &#34;element could not be located&#34; (5226ms)">    at Demo test unosquare (C:\Users\mariana.vives\source\repos\NightWatchJs\Tests\unosqAssertVerif.js:9:15)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
