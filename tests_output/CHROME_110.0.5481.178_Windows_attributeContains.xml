@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="attributeContains"
+    errors="1" failures="1" hostname="" id="" package="attributeContains" skipped="0"
+    tests="1" time="8.001" timestamp="">
+  
+    <testcase name="Demo test unosquare" classname="attributeContains" time="8.001" assertions="2">
+
+      <failure message="Testing if attribute &#39;class&#39; of element &lt;li a[href = &#39;/Services&#39;]&gt; contains &#39;nav&#39; in 5000ms - expected &#34;contains &#39;nav&#39;&#34; but got: &#34;element could not be located&#34; (5236ms)">    at Demo test unosquare (C:\Users\mariana.vives\source\repos\NightWatchJs\Tests\attributeContains.js:7:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+
+    
+    <error message="Error while running &#34;attributeContains&#34; command: Testing if attribute [0;33m&#39;class&#39;[0m of element [0;33m&lt;li a[href = &#39;/Services&#39;]&gt;[0m contains [0;33m&#39;nav&#39;[0m in 5000ms - expected [0;32m&#34;contains &#39;nav&#39;&#34;[0m but got: [0;31m&#34;element could not be located&#34;[0m [0;90m(5236ms)[0m" type="error"><![CDATA[
+        at Demo test unosquare (C:\Users\mariana.vives\source\repos\NightWatchJs\Tests\attributeContains.js:7:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        NoSuchElementError: An error occurred while running .getAttribute() command on &lt;li a[href = &#39;/Services&#39;]&gt;: 
+   {&#34;sessionId&#34;:&#34;5a6f3712cb4b8826f0d84fb555a1212a&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+       at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  NoSuchElementError: An error occurred while running .isVisible() command on &lt;xxxx&gt;: 
+   {&#34;sessionId&#34;:&#34;19be1962cefc1f9ab3a22e4b1045d0e2&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+       at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  NoSuchElementError: An error occurred while running .isVisible() command on &lt;.non_existing&gt;: 
+   {&#34;sessionId&#34;:&#34;19be1962cefc1f9ab3a22e4b1045d0e2&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+       at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
