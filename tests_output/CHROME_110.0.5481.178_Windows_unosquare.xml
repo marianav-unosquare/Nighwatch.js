@@ -5,26 +5,14 @@
 
   <testsuite name="unosquare"
     errors="0" failures="0" hostname="" id="" package="unosquare" skipped="0"
-    tests="1" time="3.472" timestamp="">
+    tests="1" time="4.087" timestamp="">
   
-    <testcase name="Demo test unosquare" classname="unosquare" time="3.472" assertions="1">
+    <testcase name="test pages validation" classname="unosquare" time="4.087" assertions="1">
 
     
     </testcase>
   
 
-  
-    <system-err>
-        NoSuchElementError: An error occurred while running .getAttribute() command on &lt;li a[href = &#39;/Services&#39;]&gt;: 
-   {&#34;sessionId&#34;:&#34;5a6f3712cb4b8826f0d84fb555a1212a&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
-       at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-  NoSuchElementError: An error occurred while running .isVisible() command on &lt;xxxx&gt;: 
-   {&#34;sessionId&#34;:&#34;19be1962cefc1f9ab3a22e4b1045d0e2&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
-       at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-  NoSuchElementError: An error occurred while running .isVisible() command on &lt;.non_existing&gt;: 
-   {&#34;sessionId&#34;:&#34;19be1962cefc1f9ab3a22e4b1045d0e2&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
-       at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    </system-err>
   
 
     
