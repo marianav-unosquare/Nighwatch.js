@@ -5,9 +5,9 @@
 
   <testsuite name="unosquare"
     errors="0" failures="0" hostname="" id="" package="unosquare" skipped="0"
-    tests="1" time="4.087" timestamp="">
+    tests="1" time="4.315" timestamp="">
   
-    <testcase name="test pages validation" classname="unosquare" time="4.087" assertions="1">
+    <testcase name="test pages validation" classname="unosquare" time="4.315" assertions="1">
 
     
     </testcase>
