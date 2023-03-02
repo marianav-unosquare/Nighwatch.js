@@ -5,20 +5,14 @@
 
   <testsuite name="unosquare"
     errors="0" failures="0" hostname="" id="" package="unosquare" skipped="0"
-    tests="1" time="3.577" timestamp="">
+    tests="1" time="3.493" timestamp="">
   
-    <testcase name="test pages validation" classname="unosquare" time="3.577" assertions="1">
+    <testcase name="test pages validation" classname="unosquare" time="3.493" assertions="1">
 
     
     </testcase>
   
 
-  
-    <system-err>
-        Error: Unknown property: &#34;expect&#34;. Please consult docs at: http://nightwatchjs.org/api.
-       at test pages validation this one fails (C:\Users\mariana.vives\source\repos\NightWatchJs\Tests\unosquare\unosquare\UnoTest3.js:19:13)
-       at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    </system-err>
   
 
     

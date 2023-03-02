@@ -4,7 +4,7 @@ module.exports = {
     custom_commands_path: "./commands",
     page_objects_path:[ 'PageObjects/Unosquare','PageObjects/Nightwatch'],
     skip_testcases_on_fail: false,
-    src_folders: ["Tests/unosquare/unosquare"],
+    src_folders: ["Tests/unosquare"],
     webdriver: {
         start_process: true,
         port: 4444,
