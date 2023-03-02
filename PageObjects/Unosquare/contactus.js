@@ -1,5 +1,13 @@
 module.exports = {
+
+    getData() {
+        return require('C:/Users/mariana.vives/source/repos/NightWatchJs/dataExternal/unosquareForm.json'); 
+        // Using the correct path is important
+        },
+
+
     url: 'https://www.unosquare.com/contact-us/',
+
     elements: {
         contactHeader: { selector: 'h1[class="elementor-heading-title elementor-size-default"]' },
         nameInput: '#firstname-b0570355-5abf-47d4-b00c-fcf04db071cc',
@@ -11,7 +19,29 @@ module.exports = {
         },
         parragraph: {
             selector: 'section[class="elementor-section elementor-top-section elementor-element elementor-element-f1649bc elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"] p:nth-child(1)'
-        }
+        },
+    },
+    
+    commands: {
+        validateWebsiteInfo() {
+            return this
+                .assert.urlEquals('https://www.unosquare.com/contact-us/')
+                .assert.containsText('@contactHeader', 'Contact Us')
+                .assert.title('Contact Us - Unosquare')
+                .assert.cssProperty('@image', 'width', '367px')
+                .assert.attributeContains('@submitBtn', 'value', 'Submit')
+                .assert.not.cssProperty('@parragraph', 'font-size', '16px')
+        },
 
+
+        fillForm(form) {
+            return this
+                .sendKeys('@nameInput', form.name)
+                .sendKeys('@emailInput', form.email)
+                .sendKeys('@messageInput', form.message)
+
+        }
     }
-};
+
+}
+
