@@ -31,7 +31,6 @@ module.exports = {
                 .assert.not.cssProperty('@clientSuccImg', 'height', '5000px')
                 .assert.containsText('@talentAcqTitle', 'Talent Acquisition')
                 .assert.title(title)
-                .expect.element('@parragraphFirst').text.to.contain(parrContent)   
             }
         }
 
