@@ -22,7 +22,7 @@ module.exports = {
             return this
             .assert.urlContains('blog')
             .assert.containsText('@mainTitle', header)
-            .assert.cssProperty('@imgOpenAI', 'width', '313.104px')
+            .assert.cssProperty('@imgOpenAI', 'width', '337px')
             .assert.attributeContains('@buttonLoadMore', 'role','button')
             .assert.not.cssProperty('@imgOpenAI', 'height', '5000px')
             .assert.containsText('@articleHeader', 'Software Development')

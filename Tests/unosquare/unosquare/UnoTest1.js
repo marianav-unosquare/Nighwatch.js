@@ -15,7 +15,7 @@ module.exports = {
             .sendKeys('@nameInput', 'MyName')
             .sendKeys('@emailInput', 'myEmail@email.com')
             .sendKeys('@messageInput', 'MyMessage')
-            .assert.cssProperty('@image', 'width', '489.667px')
+            .assert.cssProperty('@image', 'width', '367px')
             .assert.attributeContains('@submitBtn', 'value','Submit')
             .assert.not.cssProperty('@parragraph', 'font-size', '16px')
             .assert.title('Contact Us - Unosquare'),          

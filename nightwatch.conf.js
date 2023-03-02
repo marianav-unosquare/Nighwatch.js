@@ -13,9 +13,18 @@ module.exports = {
     },
     test_settings: {
         default: {
+            'screenshots': {
+                'enabled' : true,
+                'on_failure': true,
+                'on_error': true,
+                'path': 'tests_output/screenshots'
+            },
             launch_url: 'https://nightwatchjs.org',
             desiredCapabilities: {
-                browserName: 'chrome'
+                browserName: 'chrome',
+                'chromeOptions':{
+                    'args':['--headless']
+                }
             }
         }
     },
