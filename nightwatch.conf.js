@@ -2,7 +2,7 @@ module.exports = {
     // An array of folders (excluding subfolders) where your tests are located;
     // if this is not specified, the test source must be passed as the second argument to the test runner.
     custom_commands_path: "./commands",
-    page_objects_path:[ 'PageObjects/Unosquare','PageObjects/Nightwatch'],
+    page_objects_path:[ 'PageObjects/Unosquare','PageObjects/Nightwatch', 'PageObjects/Amazon'],
     skip_testcases_on_fail: false,
     src_folders: ["Tests/unosquare"],
     webdriver: {
@@ -24,9 +24,12 @@ module.exports = {
             desiredCapabilities: {
                 browserName: 'chrome',
                 'chromeOptions':{
-                    'args':['--headless']
+                   'args':['--headless']
                 }
-            }
+            },
+            globals: {
+                "myGlobal" : ["firstpriceG", "secondPriceG"]
+              }
         }
     },
 };

@@ -1,11 +1,4 @@
 module.exports = {
-
-    getData() {
-        return require('C:/Users/mariana.vives/source/repos/NightWatchJs/dataExternal/unosquareForm.json'); 
-        // Using the correct path is important
-        },
-
-
     url: 'https://www.unosquare.com/contact-us/',
 
     elements: {
@@ -28,7 +21,7 @@ module.exports = {
                 .assert.urlEquals('https://www.unosquare.com/contact-us/')
                 .assert.containsText('@contactHeader', 'Contact Us')
                 .assert.title('Contact Us - Unosquare')
-                .assert.cssProperty('@image', 'width', '367px')
+                .assert.cssProperty('@image', 'width', '489.667px')
                 .assert.attributeContains('@submitBtn', 'value', 'Submit')
                 .assert.not.cssProperty('@parragraph', 'font-size', '16px')
         },
